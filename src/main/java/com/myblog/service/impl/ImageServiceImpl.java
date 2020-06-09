@@ -2,7 +2,6 @@ package com.myblog.service.impl;
 
 import com.myblog.dao.ImageMapper;
 import com.myblog.service.IImageService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

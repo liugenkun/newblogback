@@ -1,7 +1,6 @@
 package com.myblog.util;
 
 import com.github.pagehelper.PageInfo;
-
 import com.myblog.config.WebConst;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Component;

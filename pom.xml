@@ -9,7 +9,7 @@
     <packaging>jar</packaging>
 
     <name>newblogback</name>
-    <description>myblog background</description>
+    <description>博客后台管理系统</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>

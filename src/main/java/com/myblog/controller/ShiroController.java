@@ -54,8 +54,8 @@ public class ShiroController {
     public RestResponseBo login(Admin admin, HttpServletRequest request) throws Exception {
         try {
             Subject subject = SecurityUtils.getSubject();
-            String newPassword = CryptographyUtil.md5(admin.getAdminpasswd());
-            UsernamePasswordToken token = new UsernamePasswordToken(admin.getAdminname(), newPassword);
+//            String newPassword = CryptographyUtil.md5(admin.getAdminpasswd());
+            UsernamePasswordToken token = new UsernamePasswordToken(admin.getAdminname(), admin.getAdminpasswd());
             subject.login(token);
             String loginDate = DateTime.now().toString("yyyy-MM-dd HH:mm:ss");
             String ip = IPUtils.getIpAddr(request);
